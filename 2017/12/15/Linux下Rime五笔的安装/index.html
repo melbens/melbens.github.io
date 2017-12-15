@@ -9,19 +9,19 @@
     
         <meta name="keywords" content="Linux" />
     
-    <meta name="description" content="先 &amp;gt;sudo apt-get install ibus-rime &amp;gt;sudo apt-get install librime-data-wu 后,在rime里是找不到五笔这个选项的,需要手动添加配置 ###如果你使用的是fcitx,那么 &amp;gt;cd .config/fcitx/rime &amp;gt;vim default.yaml ###如果你使用的是ibus,那么 &amp;gt;cd .">
+    <meta name="description" content="先12$ sudo apt-get install ibus-rime$ sudo apt-get install librime-data-wu 后,在rime里是找不到五笔这个选项的,需要手动添加配置 如果你使用的是fcitx,那么12$ cd .config/fcitx/rime$ vim default.yaml 如果你使用的是ibus,那么12$ cd .config/ibus/rim">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux下Rime五笔的安装">
 <meta property="og:url" content="http://yoursite.com/2017/12/15/Linux下Rime五笔的安装/index.html">
 <meta property="og:site_name" content="Melbens">
-<meta property="og:description" content="先 &amp;gt;sudo apt-get install ibus-rime &amp;gt;sudo apt-get install librime-data-wu 后,在rime里是找不到五笔这个选项的,需要手动添加配置 ###如果你使用的是fcitx,那么 &amp;gt;cd .config/fcitx/rime &amp;gt;vim default.yaml ###如果你使用的是ibus,那么 &amp;gt;cd .">
+<meta property="og:description" content="先12$ sudo apt-get install ibus-rime$ sudo apt-get install librime-data-wu 后,在rime里是找不到五笔这个选项的,需要手动添加配置 如果你使用的是fcitx,那么12$ cd .config/fcitx/rime$ vim default.yaml 如果你使用的是ibus,那么12$ cd .config/ibus/rim">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/melbens/melbens.github.io/master/2017/12/15/Linux%E4%B8%8BRime%E4%BA%94%E7%AC%94%E7%9A%84%E5%AE%89%E8%A3%85/a.jpg">
-<meta property="og:updated_time" content="2017-12-15T15:35:23.460Z">
+<meta property="og:updated_time" content="2017-12-15T15:41:46.152Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux下Rime五笔的安装">
-<meta name="twitter:description" content="先 &amp;gt;sudo apt-get install ibus-rime &amp;gt;sudo apt-get install librime-data-wu 后,在rime里是找不到五笔这个选项的,需要手动添加配置 ###如果你使用的是fcitx,那么 &amp;gt;cd .config/fcitx/rime &amp;gt;vim default.yaml ###如果你使用的是ibus,那么 &amp;gt;cd .">
+<meta name="twitter:description" content="先12$ sudo apt-get install ibus-rime$ sudo apt-get install librime-data-wu 后,在rime里是找不到五笔这个选项的,需要手动添加配置 如果你使用的是fcitx,那么12$ cd .config/fcitx/rime$ vim default.yaml 如果你使用的是ibus,那么12$ cd .config/ibus/rim">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/melbens/melbens.github.io/master/2017/12/15/Linux%E4%B8%8BRime%E4%BA%94%E7%AC%94%E7%9A%84%E5%AE%89%E8%A3%85/a.jpg">
     
 
@@ -168,17 +168,11 @@
         
         <div class="article-entry" itemprop="articleBody">
             <p><img src="https://raw.githubusercontent.com/melbens/melbens.github.io/master/2017/12/15/Linux%E4%B8%8BRime%E4%BA%94%E7%AC%94%E7%9A%84%E5%AE%89%E8%A3%85/a.jpg" alt="RIME"></p>
-<p>先</p>
-<pre><code>&gt;sudo apt-get install ibus-rime
-&gt;sudo apt-get install librime-data-wu
-</code></pre><p>后,在rime里是找不到五笔这个选项的,需要手动添加配置</p>
-<p>###如果你使用的是<strong><em>fcitx</em></strong>,那么</p>
-<pre><code>&gt;cd .config/fcitx/rime
-&gt;vim default.yaml
-</code></pre><p>###如果你使用的是<strong><em>ibus</em></strong>,那么</p>
-<pre><code>&gt;cd .config/ibus/rime
-&gt;vim default.yaml
-</code></pre><p>在schema_list项下添加:<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- schema: wubi86</span><br><span class="line">- schema: wubi_pinyin(如果你需要的话)</span><br></pre></td></tr></table></figure></p>
+<p>先<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install ibus-rime</span><br><span class="line">$ sudo apt-get install librime-data-wu</span><br></pre></td></tr></table></figure></p>
+<p>后,在rime里是找不到五笔这个选项的,需要手动添加配置</p>
+<h3 id="如果你使用的是fcitx-那么"><a href="#如果你使用的是fcitx-那么" class="headerlink" title="如果你使用的是fcitx,那么"></a>如果你使用的是<strong><em>fcitx</em></strong>,那么</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd .config/fcitx/rime</span><br><span class="line">$ vim default.yaml</span><br></pre></td></tr></table></figure>
+<h3 id="如果你使用的是ibus-那么"><a href="#如果你使用的是ibus-那么" class="headerlink" title="如果你使用的是ibus,那么"></a>如果你使用的是<strong><em>ibus</em></strong>,那么</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd .config/ibus/rime</span><br><span class="line">$ vim default.yaml</span><br></pre></td></tr></table></figure>
+<p>在schema_list项下添加:<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- schema: wubi86</span><br><span class="line">- schema: wubi_pinyin(如果你需要的话)</span><br></pre></td></tr></table></figure></p>
 <p>然后重新部署rime输入法(就是切换到rime输入法之后,在右上角点输入法切换图标,rime输入法下就有部署选项.</p>
 <p>再回到输入界面,按F4,是不是已经有了五笔以及五笔拼音选项啦~</p>
 
@@ -188,7 +182,7 @@
 
 
 
-    <a data-url="http://yoursite.com/2017/12/15/Linux下Rime五笔的安装/" data-id="cjb82sa7j0000lkw054e5l43x" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yoursite.com/2017/12/15/Linux下Rime五笔的安装/" data-id="cjb82v1yk0000m8w0x6cgego5" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
